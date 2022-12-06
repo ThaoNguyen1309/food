@@ -120,6 +120,262 @@
     margin-bottom: 60px;
 }
 
+.content .sub-content {
+    display: flex;
+}
+
+.sub-content-left {
+    margin-right: 32px;
+}
+
+.sub-content-up {
+    width: 592px;
+    height: 556px;
+    background: #FFFFFF;
+    box-shadow: 0px 147px 183px rgba(0, 0, 0, 0.07);
+    margin-bottom: 40px;
+    padding: 40px;
+}
+
+.sub-content-up input {
+    width: 512px;
+    height: 44px;
+    border: 1px solid #D9D9D9;
+    outline: none;
+    padding: 14px 16px;
+    color: #444546;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: 'Mukta';
+}
+
+.sub-up:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.sub-content-up .text-title {
+    color: #151618;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: 'Mukta';
+    margin-bottom: 12px;
+}
+
+.sub-up-right input {
+    width: 246px;
+}
+
+.sub-up-left input {
+    width: 246px;
+    margin-right: 20px;
+}
+
+.sub-content-down {
+    width: 592px;
+    height: 160px;
+    background: #FFFFFF;
+    box-shadow: 0px 147px 183px rgba(0, 0, 0, 0.07);
+    padding: 40px;
+}
+
+.sub-content-down input {
+    width: 512px;
+    height: 44px;
+    border: 1px solid #D9D9D9;
+    outline: none;
+    padding: 14px 16px;
+    color: #444546;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: 'Mukta';
+}
+
+.sub-content-down .text-title {
+    color: #151618;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: 'Mukta';
+    margin-bottom: 12px;
+}
+
+.sub-content-right {
+    width: 384px;
+    height: 703px;
+    background: #FFFFFF;
+    box-shadow: 0px 147px 183px rgba(0, 0, 0, 0.07);
+    padding: 32px 40px;
+}
+
+.sub-content-right .text-title {
+    color: #151618;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    font-family: 'Fahkwang';
+    text-align: center;
+    margin-bottom: 11px;
+}
+
+.date-time {
+    border-top: 1.5px solid #D08C30;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    margin: 29px 0px 12px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.text-date {
+    color: #726666;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: 'Mukta';
+}
+
+.right-date {
+    color: #726666;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: 'Mukta';
+}
+
+.pro-quan {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed #D9D9D9;;
+}
+
+.pro-quan ul li {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: 'Mukta';
+    color: #151618;
+}
+
+.pro-quan ul li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.text-pro-quan {
+    margin: 24px 0px 22px;
+    color: #726666;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: 'Mukta';
+}
+
+.quantity {
+    text-align: right;
+}
+
+.discount {
+    margin: 24px 0px;
+}
+
+.discount input {
+    width: 304px;
+    height: 40px;
+    outline: none;
+    padding: 11px 12px;
+    color: #151618;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: 'Mukta';
+}
+
+.discount .text-discount {
+    color: #D08C30;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: 'Mukta';
+}
+
+.sub-cou-ship {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.text-sub-cou-ship ul li {
+    list-style-type: none;
+}
+
+.text-sub-cou-ship ul li:not(:last-child) {
+    margin-bottom: 14px;
+    color: #151618;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    font-family: 'Mukta';
+}
+
+.text-sub-cou-ship ul li:last-child {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
+    color: #726666;
+    font-family: 'Mukta';
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    color: #726666;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: 'Mukta';
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed #D9D9D9;
+}
+
+.text-total {
+    color: #151618;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    font-family: 'Mukta';
+    margin: 25px 0px 40px;
+}
+
+.btn-confirm {
+    width: 280px;
+    height: 52px;
+    background: #D08C30;
+    padding: 11px 73px 11px 76px;
+    color: #F6E8D6;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Mukta';
+    margin: 0px 12px;
+    cursor: pointer;
+}
+
 .footer {
     height: 400px;
     background-color: #131313;
