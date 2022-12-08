@@ -5,33 +5,163 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@200&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page</title>
     </head>
 
     <body>
         <div class="main">
             <div class="header">
-                    <img src="./assets/img/Group 5.png" alt="">
-                    <a>Homepage</a>
-                    <a>About us</a>
-                    <a>Contact</a>
-                    <a>Menu Combo</a>
-                    <a>Shop</a>
-                    <img src="./assets/img/cart 1.png" alt="">
+                <div class="header_full">
+                    <div class="h_left">
+                        <div>
+                            <a href="home.html">
+                                <img src="/assets/img/Group 5.png">
+                            </a>
+                        </div>
+
+                        <div class="menu">
+                            <ul>
+                                <li class="active"><a href="home.html">Home page</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="menu_combo.html">Menu Combo</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="h_right">
+                        <a href="cart.html">
+                            <img src="/assets/img/cart 1.png" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="slider">
+            <div class="slideshow-container">
 
+                <div class="mySlides fade">
+                    <div class="text-banner">
+                        <p class="text-title">Sign up & get baked!</p>
+                        <p class="text-content">Let’s Eat produces a variety of hand-crafted bakery goods for private label customers, as well as a full line of packaged and labeled specialty products. Sign up for our newsletter and be the first to see our latest events, exclusive promotions, and new arrivals!</p>
+                    </div>
+                    <div class="email-banner">
+                        <input type="text" name="" placeholder="youremail@gmail.com" id="">
+                        <button class="text_button_banner">Submit</button>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    <div style="margin-top: 28px;">
+                        <span class="dot active-dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </div>
             </div>
-
+                
             <div class="content">
 
             </div>
 
-            <div class="footer"> 
-
+            <div class="footer">
+                <div class="footer_up">
+                    <div class="footer1">
+                        <img src="/assets/img/logo_footer.png" alt="">
+                        <p class="text_footer">Today, Let’s Eat is the largest bakery in the New York, however it remains family run. We have a workforce of over 1,500 people and the capacity to produce 1 million buns and rolls alone every day.</p>
+                        <p class="text_sub">Subcribe to get our letter</p>
+                        <div class="email">
+                            <input type="text" name="" placeholder="youremail@gmail.com" id="">
+                            <button class="text_button">Submit</button>
+                        </div>
+                    </div>
+                    <div class="footer1">
+                        <p class="contact_footer">Contact</p>
+                        <div class="sub_contact">
+                            <img src="/assets/img/placeholder (1) 1.png" alt="">
+                            <p class="place">90 Broad St. 90 Broad Street, 2nd floor, New York, NY</p>
+                        </div>
+                        <div class="sub_contact">
+                            <img src="/assets/img/phone-receiver-silhouette 1.png" alt="">
+                            <p class="phone">(+35) 708 128 5245</p>
+                        </div>
+                        <div class="sub_contact">
+                            <img src="/assets/img/envelope 1.png" alt="">
+                            <p class="email">bakery.adamo@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="footer1">
+                        <p class="link">Link</p>
+                        <ul>
+                            <li>
+                                <a href="">Term & Condition</a>
+                            </li>
+                            <li>
+                                <a href="">About us</a>
+                            </li>
+                            <li>
+                                <a href="">Contact</a>
+                            </li>
+                            <li>
+                                <a href="">Shop</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_down">
+                    <div class="footer_css">
+                        <p>Copyright © 2021 by Adamo Software</p>
+                    </div>
+                    <div class="footer_css">
+                        <a href="">
+                            <img src="./assets/img/instagram 1.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/img/linkedin 1.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/img/twitter-sign 1.png" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
-
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script type="text/javascript">
+            $(document).on('click', 'ul li', function(){
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+        </script>
+        <!-- <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script> -->
     </body>
 </html>

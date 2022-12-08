@@ -31,7 +31,23 @@
 }
 
 .menu ul {
+    position: absolute;
+    display: flex;
     list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li.active a {
+    color: #D08C30;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Mukta';
 }
 
 .menu ul li a {
@@ -42,9 +58,12 @@
     font-size: 18px;
     line-height: 30px;
     font-family: 'Mukta';
+    position: relative;
+    display: block;
+    letter-spacing: 0.03em;
 }
 
-.menu ul li a:first-child {
+.menu ul li:first-child {
     margin-left: 65px;
 }
 
@@ -81,10 +100,9 @@
     flex-direction: column;
 }
 
-.content .border {
-    border: 2px solid #D08C30;
+.content hr {
     width: 32px;
-    height: 0px;
+    border: 2px solid #D08C30;
 }
 
 .content .title {

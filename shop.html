@@ -5,12 +5,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/category.css">
+        <link rel="stylesheet" href="assets/css/shop.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@200&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Category</title>
+        <title>Shop</title>
     </head>
 
     <body>
@@ -26,13 +26,11 @@
 
                         <div class="menu">
                             <ul>
-                                <li>
-                                    <a href="">Home page</a>
-                                    <a href="">About us</a>
-                                    <a href="">Contact</a>
-                                    <a href="">Menu Combo</a>
-                                    <a href="">Shop</a>
-                                </li>
+                                <li><a href="home.html">Home page</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="menu_combo.html">Menu Combo</a></li>
+                                <li class="active"><a href="shop.html">Shop</a></li>
                             </ul>
                         </div>
                     </div>
@@ -50,7 +48,7 @@
             </div>
 
             <div class="content">
-                <p class="border"></p>
+                <hr>
                 <p class="title">OUR MENU</p>
                 <p class="title1">OUR POPULAR DISHES</p>
                 <p class="sub-title">With creative and love, we baked a lot sweet breads for you, for your family and for New York. Let's see our menu and choose the perfect dishes for your meal.</p>
@@ -139,5 +137,11 @@
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script type="text/javascript">
+            $(document).on('click', 'ul li', function(){
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+        </script>
     </body>
 </html>

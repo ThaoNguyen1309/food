@@ -26,13 +26,11 @@
 
                             <div class="menu">
                                 <ul>
-                                    <li>
-                                        <a href="home.html">Home page</a>
-                                        <a href="about.html">About us</a>
-                                        <a href="#">Contact</a>
-                                        <a href="menu_combo.html">Menu Combo</a>
-                                        <a href="shop.html">Shop</a>
-                                    </li>
+                                    <li><a href="home.html">Home page</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li class="active"><a href="menu_combo.html">Menu Combo</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -50,7 +48,7 @@
             </div>
 
             <div class="content">
-                <p class="border"></p>
+                <hr>
                 <p class="title">OUR MENU</p>
                 <p class="title1">OUR PERFECT COMBO</p>
                 <p class="sub-title">A full meal of bread and coffee, or a relaxing afternoon with some sweets and tea. Let’s see what we have!</p>
@@ -119,5 +117,11 @@
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script type="text/javascript">
+            $(document).on('click', 'ul li', function(){
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+        </script>
     </body>
 </html>

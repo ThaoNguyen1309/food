@@ -26,18 +26,16 @@
 
                         <div class="menu">
                             <ul>
-                                <li>
-                                    <a href="">Home page</a>
-                                    <a href="">About us</a>
-                                    <a href="">Contact</a>
-                                    <a href="">Menu Combo</a>
-                                    <a href="">Shop</a>
-                                </li>
+                                <li><a href="home.html">Home page</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="menu_combo.html">Menu Combo</a></li>
+                                <li><a href="shop.html">Shop</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="h_right">
-                        <a href="">
+                        <a href="cart.html">
                             <img src="/assets/img/cart 1.png" alt="">
                         </a>
                     </div>
@@ -50,7 +48,7 @@
             </div>
 
             <div class="content">
-                <p class="border"></p>
+                <hr class="line-top">
                 <p class="title">Check out</p>
                 <p class="title1">fINAL STEP!</p>
                 <p class="sub-title">Thanks for your purchase. We have feeling this is the beginning of beautiful friendship! So that we can get to know each other a little better, we are offering you $10 off an order of $50 or more.</p>
@@ -101,6 +99,7 @@
                         <div class="text-title">
                             ORDER SUMMARY - #12192409
                         </div>
+                        <hr class="line-right">
                         <div class="date-time">
                             <div class="date">
                                 <div class="text-date">
@@ -172,6 +171,7 @@
                         </div>
                         <div class="popup">
                             <div class="popup-content">
+                                <hr class="line-popup">
                                 <p class="text-thank">THANK YOU</p>
                                 <p class="text-popup">FOR YOU ORDERING</p>
                                 <img src="./assets/img/Vector3.png" alt="">
@@ -247,6 +247,12 @@
         <script>
             document.getElementById("btn-confirm").addEventListener("click", function(){
                 document.querySelector(".popup").style.display = "flex";
+            })
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script type="text/javascript">
+            $(document).on('click', 'ul li', function(){
+                $(this).addClass('active').siblings().removeClass('active')
             })
         </script>
     </body>
