@@ -70,7 +70,11 @@
 
 .slideshow-container {
     height: 640px;
-    position: relative;
+}
+
+.slide-content {
+    margin: 0px 36px;
+    position: absolute;
 }
 
 .text-title {
@@ -128,12 +132,16 @@
     cursor: pointer;
 }
 
-.prev, .next {
+.next-pre {
+    position: relative;
+}
+
+.next, .prev {
     font-size: 45px;
-    position: absolute;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.4);
 }
+
 .next {
     right: 0;
 }

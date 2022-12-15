@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     height: 600px;
     background-size: cover;
+    position: relative;
 }
 
 .header {
